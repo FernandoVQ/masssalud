@@ -11,3 +11,186 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px #48be79;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+/*-- -----------------------------------Header-----------------*/
+
+header{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 5px 10px #222523 ;
+}
+
+a{
+  color: #222523;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover{
+  color: #48be79;
+}
+
+li{
+  list-style: none;
+}
+
+header ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li{
+  display: 0 1rem;
+  margin: 1rem;
+}
+
+header ul li a{
+  font-weight: bold;
+}
+
+header .cart{
+  position: relative;
+  cursor: pointer;
+}
+header .cart box-icon{
+  width: 45px;
+  height: 45px;
+}
+header .cart span{
+  position: absolute;
+  top: -1rem;
+  right:  -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size:  1,5rem;
+  font-weight: 700;
+  background-color: crimson;
+}
+
+
+/*-- -----------------------------------Product-----------------*/
+
+.title{
+  font-size: 2.4rem;
+  padding: 10rem 0 0 0;
+  color: #48be79;
+}
+.products{
+  padding: 5rem 2rem;
+  margin:  0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 10px 10px 2px black;
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.product:hover{
+  border: 6px solid #48be79;
+}
+
+.product_img img{
+  width: 310px;
+}
+
+.product_footer{
+  padding: 1rem;
+
+}
+
+.product_footer p{
+  font-weight: 700;
+  color: #222523;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.product_footer .price{
+  font-size: 2rem;
+  color: #222523;
+}
+
+.product .buttom{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.buttom .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttom buttom{
+  background-color: #3033d3;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.buttom div{
+background-color: #48be79;
+display: grid;
+align-items: center;
+margin-left: -2rem;
+border-radius: 5px;
+text-align: center;
+}
+
+.buttom div a{
+  color: antiquewhite;
+  font-weight: 700;
+}
+
+.buttom div a:hober{
+  color: antiquewhite;
+}
+/*-- -----------------------------------Media-----------------*/
+
+
+@media only screen and (max-width:600px){ 
+header ul{
+  display: none;
+}
+}
+
